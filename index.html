@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="./style.css">
+        <script language="JavaScript" type="text/javascript" defer src="calc.js"></script>		
+    </head>
+<body>
+    <main class="main-box" id="main-box">
+        <header>
+          <h1>Craig's Mortgage calculator</h1>
+        </header>
+        <form class="input-form">
+          <fieldset>
+            <legend>Inputs</legend>
+              <div class="input-item">
+                <label>Loan Principal:</label>
+                <div class="input-wrap">
+                  <div class="currency-box">$</div>
+                  <input type="text" type="number" id="principal" value="100000"/>
+                </div>
+              </div>
+              <div class="input-item">
+                <label>Annual Percentage Rate (APR):</label>
+                <div class="input-wrap">
+                  <div class="percentage-box">%</div>
+                  <input type="text" type="number" id="interest" min="0" maxlength="5" step="0.01" class="input-interest" value="5.5"/>
+                </div>
+              </div>
+              <div class="input-item">
+                <label>Length of Loan:</label>
+                <select id="years">
+                  <option value="10">10 Years</option>
+                  <option value="15">15 Years</option>
+                  <option value="20">20 Years</option>
+                  <option value="30" selected>30 Years</option>
+                </select>
+              </div>
+              <div class="input-item">
+                <label>Loan Start Date:</label>
+                <div class="input-wrap">
+                  <input type="date" id="startDate" />
+                </div>
+              </div>
+          </fieldset>
+          <form>
+            <fieldset>
+            <legend>Outputs</legend>
+              <div id="output"></div>
+            </fieldset>						
+          </form>	
+</main>
+</body>
+</html>
