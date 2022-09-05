@@ -7,8 +7,8 @@
 <body>
     <main class="main-box" id="main-box">
       <div class="tabs">
-        <button class="tab-button active" data-type="calc" style="border-top-left-radius: 10px;" id="calc-button">Mortgage Calc</button>
-        <button class="tab-button" id="afford-button" data-type="afford" style="border-top-right-radius: 10px;">How Much Can I Afford?</button>
+        <button class="tab-button active" data-type="calc" style="border-top-left-radius: 30px;" id="calc-button">Mortgage Calc</button>
+        <button class="tab-button" id="afford-button" data-type="afford" style="border-top-right-radius: 30px;">How Much Can I Afford?</button>
       </div>
       <div class="contentWrapper">
         <div class="tab-content active" id="calc-content" data-type="calc">
@@ -55,58 +55,58 @@
             </fieldset>						
           </form>	
         </div>
-      </div>
-      <div class="tab-content" id="afford-content" data-type="afford">
-        <header>
-          <h1>How Much Can I Afford?</h1>
-        </header>
-        <form class="input-form">
-          <fieldset>
-            <legend>Inputs</legend>
-              <div class="input-item">
-                <label>Annual Gross Income:</label>
-                <div class="input-wrap">
-                  <div class="currency-box">$</div>
-                  <input type="text" type="number" id="gross-income" value="67521.00"/>
-                </div>
-              </div>
-              <div class="input-item">
-                <label>Down Payment:</label>
-                <div class="input-wrap">
-                  <div class="currency-box">$</div>
-                  <input type="text" type="number" id="down-payment" value="10000.00"/>
-                </div>
-              </div>
-              <div class="input-item">
-                <label>FICO® Score:</label>
-                <select id="fico">
-                  <option value="0.03" selected>580+</option>
-                  <option value="0.1">500-579</option>
-                  <option value="0.2" selected>less than 500</option>
-                </select>
-              </div>
-              <div class="input-item">
-                <label>Annual Percentage Rate (APR):</label>
-                <div class="input-wrap">
-                  <div class="percentage-box">%</div>
-                  <input type="text" type="number" id="afford-interest" min="0" maxlength="5" step="0.01" class="input-interest" value="5.5"/>
-                </div>
-              </div>
-              <div class="input-item">
-                <label>Length of Loan:</label>
-                <select id="afford-years">
-                  <option value="10">10 Years</option>
-                  <option value="15">15 Years</option>
-                  <option value="20">20 Years</option>
-                  <option value="30" selected>30 Years</option>
-                </select>
-          </fieldset>
-          <form>
+        <div class="tab-content" id="afford-content" data-type="afford">
+          <header>
+            <h1>How Much Can I Afford?</h1>
+          </header>
+          <form class="input-form">
             <fieldset>
-            <legend>Outputs</legend>
-              <div id="afford-output"></div>
-            </fieldset>						
-          </form>	
+              <legend>Inputs</legend>
+                <div class="input-item">
+                  <label>Annual Gross Income:</label>
+                  <div class="input-wrap">
+                    <div class="currency-box">$</div>
+                    <input type="text" type="number" id="gross-income" value="67521.00"/>
+                  </div>
+                </div>
+                <div class="input-item">
+                  <label>Down Payment:</label>
+                  <div class="input-wrap">
+                    <div class="currency-box">$</div>
+                    <input type="text" type="number" id="down-payment" value="10000.00"/>
+                  </div>
+                </div>
+                <div class="input-item">
+                  <label>FICO® Score:</label>
+                  <select id="fico">
+                    <option value="0.03" selected>580+</option>
+                    <option value="0.1">500-579</option>
+                    <option value="0.2">less than 500</option>
+                  </select>
+                </div>
+                <div class="input-item">
+                  <label>Annual Percentage Rate (APR):</label>
+                  <div class="input-wrap">
+                    <div class="percentage-box">%</div>
+                    <input type="text" type="number" id="afford-interest" min="0" maxlength="5" step="0.01" class="input-interest" value="5.5"/>
+                  </div>
+                </div>
+                <div class="input-item">
+                  <label>Length of Loan:</label>
+                  <select id="afford-years">
+                    <option value="10">10 Years</option>
+                    <option value="15">15 Years</option>
+                    <option value="20">20 Years</option>
+                    <option value="30" selected>30 Years</option>
+                  </select>
+            </fieldset>
+            <form>
+              <fieldset>
+              <legend>Outputs</legend>
+                <div id="afford-output"></div>
+              </fieldset>						
+            </form>	
+          </div>
         </div>
       </div>
 </main>
